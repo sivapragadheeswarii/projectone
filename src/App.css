@@ -1,38 +1,235 @@
-.App {
-  text-align: center;
+
+.a1 {
+  max-width: 900px;
+  margin: 40px auto;
+  background: rgba(245, 238, 224, 0.95); 
+  border-radius: 12px;
+  padding: 20px 30px;
+  box-shadow: 0 8px 20px rgba(75, 59, 43, 0.5);
+  display: flex;
+  gap: 30px;
+  color: #4B3B2B; 
+  font-family: 'Georgia', serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form-container {
+  flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 15px;
+}
+
+
+.a2 {
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: #7B5E3C; 
+  text-align: center;
+  text-shadow: 0 0 6px #A67B5B;
+  font-size: 1.8rem;
+}
+
+
+.a3 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+
+.a3 input[type="text"] {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1.5px solid #A67B5B;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #F9F5EF;
+  color: #4B3B2B;
+  box-shadow: inset 0 0 5px #C8B497;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+  font-family: 'Georgia', serif;
+}
+
+.a3 input[type="text"]:focus {
+  outline: none;
+  border-color: #C8A165;
+  box-shadow: 0 0 8px #C8A165;
+}
+
+
+.a3 input[type="file"] {
+  max-width: 400px;
+  cursor: pointer;
+  font-family: 'Georgia', serif;
+}
+
+.a3 input[type="file"]::-webkit-file-upload-button {
+  cursor: pointer;
+  background: #A67B5B;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  font-family: 'Georgia', serif;
+}
+.a3 input[type="file"]::-webkit-file-upload-button:hover {
+  background: #8B6239;
+}
+
+
+.a4 {
+  max-width: 400px;
+  max-height: 200px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(75, 59, 43, 0.6);
+  margin-top: 5px;
+  object-fit: contain;
+  border: 1px solid #D2B48C;
+}
+
+
+.a3 button {
+  width: max-content;
+  padding: 10px 20px;
+  background-color: #A67B5B;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px #8B6239;
+  transition: background-color 0.3s ease;
+  align-self: center;
+  font-family: 'Georgia', serif;
+}
+
+.a3 button:hover {
+  background-color: #8B6239;
+}
+
+
+.a5 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #7B5E3C;
+  margin-bottom: 20px;
+  text-align: center;
+  text-shadow: 0 0 4px #A67B5B;
+  font-family: 'Georgia', serif;
+}
+
+
+.a6 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  max-height: 600px;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+
+.a7 {
+  background: #FFF4D1; 
+  border-radius: 12px;
+  padding: 20px;
+  color: #4B3B2B;
+  box-shadow: 0 4px 10px rgba(75, 59, 43, 0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 300px;
+  transition: transform 0.3s ease;
+  font-family: 'Georgia', serif;
+  border: 1px solid #D2B48C;
+}
+
+.a7:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(75, 59, 43, 0.35);
+}
+
+
+.a7 p {
+  margin-top: 0;
+  font-size: 1.25rem;
+  color: #6F4E37;
+  border-bottom: 2px solid #A67B5B;
+  padding-bottom: 6px;
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+.a8 {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-top: 10px;
+  box-shadow: 0 2px 8px rgba(75, 59, 43, 0.2);
+  border: 1px solid #D2B48C;
+}
+
+
+.a9 {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+
+.a10 {
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  background-color: #C7A17A;
+  color: #4B3B2B;
+  box-shadow: 0 2px 6px #A67B5B;
+  transition: background-color 0.3s ease;
+  font-family: 'Georgia', serif;
+}
+
+.a10:hover {
+  background-color: #A67B5B;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.a11 {
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  background-color: #D98C6E;
+  color: #5C2E0E;
+  box-shadow: 0 2px 6px #B05E3B;
+  transition: background-color 0.3s ease;
+  font-family: 'Georgia', serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.a11:hover {
+  background-color: #B05E3B;
+  color: white;
+}
+
+
+@media (max-width: 720px) {
+  .a1 {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+  .a6 {
+    max-height: none;
   }
 }
